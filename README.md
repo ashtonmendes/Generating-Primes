@@ -373,13 +373,13 @@ Maurer's Algorithm found an 40-bit prime:
 </TD>
 </TR>
 <TR><TD>&nbsp;</TD></TR>
-<!-- Section -->
+
 <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
 <FONT COLOR="#ffffff"><A NAME="format">
 <B><TT>primesfile</TT> Format</B></A></FONT>
 </TD>
 </TR>
-<!-- Top Section -->
+
 <TR><TD COLSPAN=3 ALIGN=LEFT>
 If there are <TT>m</TT> primes between <TT>2</TT> and
 <TT>maxval</TT>, inclusive, the output file must contain
@@ -393,13 +393,13 @@ between <TT>2</TT> and <TT>maxval</TT>, inclusive.
 </TD>
 </TR>
 <TR><TD>&nbsp;</TD></TR>
-<!-- Section -->
+
 <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
 <FONT COLOR="#ffffff"><A NAME="millerrabin">
 <B>Miller-Rabin</B></A></FONT>
 </TD>
 </TR>
-<!-- Top Section -->
+
 <TR><TD COLSPAN=3 ALIGN=LEFT>
 For this assignment,
 you are required to implement the Miller-Rabin test outlined here.  
@@ -426,13 +426,13 @@ to use a specified sequence of prime numbers from <TT>primesfile</TT>.
             </TD>
         </TR>
         <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
+     
         <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
                 <FONT COLOR="#ffffff"><A NAME="rndsearch">
                 <B>Random-Search</B></A></FONT>
             </TD>
         </TR>
-        <!-- Top Section -->
+      
         <TR><TD COLSPAN=3 ALIGN=LEFT>
 For this assignment,
 you are required to implement the Random-Search algorithm outlined here.  
@@ -476,13 +476,13 @@ is specified above.
             </TD>
         </TR>
         <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
+   
         <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
                 <FONT COLOR="#ffffff"><A NAME="maurer">
                 <B>Maurer's Algorithm</B></A></FONT>
             </TD>
         </TR>
-        <!-- Top Section -->
+      
         <TR><TD COLSPAN=3 ALIGN=LEFT>
 For this assignment,
 you are required to implement Maurer's Algorithm outlined here.  
@@ -534,14 +534,14 @@ octet (or <TT>unsigned char</TT>).
             </TD>
         </TR>
         <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
+        
         <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
                 <FONT COLOR="#ffffff"><A
                 NAME="testdata"><B>Test Data &amp; Sample Output</B></A>
                     </FONT>
             </TD>
         </TR>
-        <!-- Top Section -->
+  
         <TR><TD COLSPAN=3 ALIGN=LEFT>
 <B>primes</B>
 <BLOCKQUOTE>
@@ -622,14 +622,14 @@ octet (or <TT>unsigned char</TT>).
 </TD>
 </TR>
 <TR><TD>&nbsp;</TD></TR>
-<!-- Section -->
+
 <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
 <FONT COLOR="#ffffff"><A
 NAME="grading"><B>Grading Guidelines</B></A>
     </FONT>
 </TD>
 </TR>
-<!-- Top Section -->
+
 <TR><TD COLSPAN=3 ALIGN=LEFT>
 
 </BODY>
