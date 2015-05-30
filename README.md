@@ -21,7 +21,7 @@ see the <A HREF="http://merlot.usc.edu/cs531-s15/openssl.html">additional notes 
 <P>
 </TD>
 </TR>
-
+<TR>Compiling:</TR>
 <PRE>
     make hw7</PRE>
 an executable named <B>hw7</B> is created.
