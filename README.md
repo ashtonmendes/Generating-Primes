@@ -8,22 +8,9 @@
 
 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
 <TR><TD ALIGN=CENTER VALIGN=TOP WIDTH=112>
-<!-- COL 1, should be identical to all other pages here -->
-<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=113>
-<TR><TD ALIGN=CENTER VALIGN=TOP WIDTH=112>
-&nbsp;
 </TD>
-</TR>
-</TABLE>
-</TD>
-<!-- TD ALIGN=LEFT VALIGN=TOP WIDTH=13 -->
-<!-- COL 2, should be identical to all other pages here -->
-<!-- IMG SRC="images/spacer.gif" HEIGHT=1 WIDTH=13 -->
-<!-- /TD -->
 <TD ALIGN=LEFT VALIGN=TOP>
-<!-- COL 3, every page should be different -->
 <TABLE BORDER=0>
-<!-- Page Header -->
 <TR><TD ALIGN=LEFT VALIGH=TOP>
 <A HREF="../../">Spring 2015<A>
 </TD>
@@ -32,82 +19,44 @@
 </TD>
 </TR>
 <BR>
-<!-- Page Title -->
-<TR><TD COLSPAN=3 ALIGN=CENTER>
-<H2>Homework #7</H2>
-<H4>(100 points total)</H4>
-<H2>Generating Primes</H2>
-<B><I>Due 11:45PM
-5/1/2015 (firm)</I></B>
-<!--
-<H3><FONT COLOR="red"><I>(Under Construction -
-    Anything Can Change without Notice)</I></FONT></H3>
-  -->
-</TD>
-</TR>
-<TR><TD>&nbsp;</TD></TR>
-<!-- Section -->
-<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-<FONT COLOR="#ffffff"><A
-NAME="intro"><B>Assignment</B></A></FONT>
-</TD>
-</TR>
-<!-- Top Section -->
 <TR><TD COLSPAN=3 ALIGN=LEFT>
-The purpose of this assignment is to get you familiar with
+The purpose of this assignment is to get familiar with
 generating prime numbers, the
 <A HREF="http://www.openssl.org/docs/crypto/bn.html">multiple
 precision math library (called BIGNUM)</A> of
 <A HREF="http://www.openssl.org">openssl</A>,
 and modular arithematics with <TT>BIGNUM</TT>.
 
-<P>
-
-Regarding prime number generation, please see the
-<A HREF="../../lectures.html#tentative">lecture slides on
-Public-key Parameters</A> and section 4.2.3 and 4.4.4 of the
-textbook.
-
-<P>
-
 To use <TT>openssl</TT> on <TT>nunki.usc.edu</TT>, please
-see the <A HREF="../../openssl.html">additional notes on <TT>openssl</TT></A>.
+see the <A HREF="http://merlot.usc.edu/cs531-s15/openssl.html">additional notes on <TT>openssl</TT></A>.
 
 <P>
-
-<A HREF="#submit">Electronic submissions</A> only.
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A
-                NAME="compile"><B>Compiling</B></A></FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
-Please use a <TT>Makefile</TT> so that when the grader simply enters:
-    <PRE>
+</TD>
+</TR>
+<TR><TD>&nbsp;</TD></TR>
+<!-- Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
+<FONT COLOR="#ffffff"><A
+NAME="compile"><B>Compiling</B></A></FONT>
+</TD>
+</TR>
+<!-- Top Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT>
+<PRE>
     make hw7</PRE>
 an executable named <B>hw7</B> is created.
-(Minor variation on the <TT>make</TT> command is allowed if it is
-clearly documented in your <TT>README</TT> file.)
-Please make sure that your submission conforms to
-<A HREF="../../makefile.html#requirements">other
-general compilation requirements</A>.
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A
-                NAME="syntax"><B>Commandline Syntax & Program
-                Output</B></A></FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
+</TD>
+</TR>
+<TR><TD>&nbsp;</TD></TR>
+<!-- Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
+<FONT COLOR="#ffffff"><A
+NAME="syntax"><B>Commandline Syntax & Program
+Output</B></A></FONT>
+</TD>
+</TR>
+<!-- Top Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT>
 The commandline syntax for <B>hw7</B> is as follows:
 
 <PRE>
@@ -119,16 +68,16 @@ The commandline syntax for <B>hw7</B> is as follows:
 <P>
 
 Square bracketed items are optional.
-You must follow the UNIX convention that <B>commandline options</B>
+Follows the UNIX convention that <B>commandline options</B>
 can come in any order.  (Note: a <B>commandline option</B> is a
 commandline argument that begins with a <B>-</B> character in a
 commandline syntax specification.)
-If an input file is not specified, your program must
-read from <TT>stdin</TT>.
+If an input file is not specified, the program
+reads from <TT>stdin</TT>.
 Unless otherwise specified,
-output of your program must go to <TT>stdout</TT> and
-error messages must go to <TT>stderr</TT>.
-<TT>number</TT> is in decimal and please output all numeric values in decimal.
+output of the program goes to <TT>stdout</TT> and
+error messages go to <TT>stderr</TT>.
+<TT>number</TT> is in decimal and all output numeric values are in decimal.
 
 <P>
 
@@ -437,21 +386,17 @@ Maurer's Algorithm found an 40-bit prime:
 </BLOCKQUOTE>
 
 <P>
-
-Pleaes output reasonable and useful error messages if the command
-is malformed or file does not exist or inaccessible.  If <TT>primesfile</TT>
-is malformed, please output a meaningful error message.
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A NAME="format">
-                <B><TT>primesfile</TT> Format</B></A></FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
+</TD>
+</TR>
+<TR><TD>&nbsp;</TD></TR>
+<!-- Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
+<FONT COLOR="#ffffff"><A NAME="format">
+<B><TT>primesfile</TT> Format</B></A></FONT>
+</TD>
+</TR>
+<!-- Top Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT>
 If there are <TT>m</TT> primes between <TT>2</TT> and
 <TT>maxval</TT>, inclusive, the output file must contain
 exactly <TT>m+1</TT> words (a word is 4-bytes long and in
@@ -461,25 +406,17 @@ The first word you must output is <TT>maxval</TT>.  It is
 followed by all the prime numbers, in increasing order,
 between <TT>2</TT> and <TT>maxval</TT>, inclusive.
 <P>
-Please note that on <TT>nunki.usc.edu</TT>, the native format
-for <TT>int</TT> or <TT>uint32_t</TT> is big endian,
-so you do not need to do conversion.  On
-Pentium machines, you should call
-<A HREF="../byteorder.html"><TT>htonl()</TT></A> to
-convert a small endian number to big endian representation
-before writing it out.  On big endian machines, <TT>htonl()</TT>
-is a no-op, so you can call it anyway and make your code portable.
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A NAME="millerrabin">
-                <B>Miller-Rabin</B></A></FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
+</TD>
+</TR>
+<TR><TD>&nbsp;</TD></TR>
+<!-- Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
+<FONT COLOR="#ffffff"><A NAME="millerrabin">
+<B>Miller-Rabin</B></A></FONT>
+</TD>
+</TR>
+<!-- Top Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT>
 For this assignment,
 you are required to implement the Miller-Rabin test outlined here.  
 It's slightly different from the lecture slides to make grading
@@ -698,308 +635,18 @@ octet (or <TT>unsigned char</TT>).
   hw7 maurer -k=96 -p=primes.n220 -r=rnd.220 &gt; <A HREF="ma.96">ma.96</A>
   hw7 maurer -k=128 -p=primes.n220 -r=rnd.220 &gt; <A HREF="ma.128">ma.128</A></PRE>
 </BLOCKQUOTE>
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A
-                NAME="grading"><B>Grading Guidelines</B></A>
-                    </FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
-<!--
-The grading guidelines is not available yet.
-  -->
-
-The <A HREF="hw7-grading.txt">grading guidelines</A> has been made available.
-Please run the scripts in the guidelines on <TT>nunki.usc.edu</TT>.
-
-<P>     
-        
-The grading guidelines is the <B>only</B> grading procedure we will use to
-grade your program.  No other grading procedure will be used.
-To the best of our effort, we will only change the testing data for
-grading but not the commands.  (We may make minor changes if we discover
-bugs in the script or things that we forgot to test.)  It is strongly
-recommended that you run your code through the scripts in the grading guidelines.
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A
-                NAME="misc"><B>Miscellaneous Requirements and Hints</B></A>
-                    </FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
-<UL>
-<LI>For this assignment,
-    you are <B>not</B> allowed to use any publicly available Miller-Rabin or Maurer
-    code.  Generic public code for other purpose, such as parsing input data,
-    calling OpenSSL functions to manipulate BIGNUMs, is allowed.
-<P>
-<LI><A NAME="round">Please</A> use the following definition of <TT>round()</TT>:
-    <PRE>
-    #define round(X) (((X) &gt;= 0) ? (int)((X)+0.5) : (int)((X)-0.5))</PRE>
-<P>
-<LI>When you debug, you can call <TT>BN_is_prime()</TT> to check if what you
-    got agrees with OpenSSL's implementation of Miller-Rabin.
-<P>
-<LI>It's important that <B>every byte</B> of your data is read and written
-    correctly.  You will <B>lose a lot of points</B> if one byte of data is
-    generated incorrectly!  The grading of this assignment will be <B>harsh</B>.
-<P>
-<LI>Please follow the UNIX convention that, when your output is an ASCII
-    file, append '\n' in the last line of the output if it's not a
-    blank line.  (This way, you don't get the commandline prompt appearing at
-    the wrong place on the screen.)
-<P>
-<LI>String I/O functions such as <TT>fgets()</TT>, <TT>scanf()</TT>, and
-    <TT>printf()</TT> are really meant for inputing/outputing
-    null-terminated <I>strings</I>.
-    Do <B>not</B> use them to input/output binary data!
-<P>
-<LI>The Solaris workstations in the ISD lab in SAL have the same
-    setup as nunki.usc.edu.  So, if you are logged on to one of
-    these workstations, please do your development locally and
-    not to overload nunki unnecessarily.
-<P>
-<LI>Start working on this <B>early</B>!  Please don't complain
-    to the instructor that this assignment is too tedious or
-    it takes too much work just to parse the commandline.
-    Please get it done early and get it done right!
-<P>
-<LI>Please use functions from the
-    <A HREF="http://www.openssl.org/docs/crypto/bn.html">BIGNUM library</A>
-    of <A HREF="http://www.openssl.org">openssl</A>.
-    (You may find slightly more documentation at the
-    <A HREF="http://developer.apple.com/documentation/Darwin/Reference/ManPages/man3/bn.3ssl.html">Apple developer's web site</A>.)
-    Here are some of the functions that you may very likely to use:
-    <BLOCKQUOTE>
-        <DL COMPACT>
-        <DT>Memory management:
-        <DD><TT>BN_new()</TT>,
-            <TT>BN_init()</TT>,
-            <TT>BN_free()</TT>,
-            <TT>BN_CTX_new()</TT>,
-            <TT>BN_CTX_init()</TT>,
-            <TT>BN_CTX_free()</TT>
-        </DL>
-        <P>
-        <DL COMPACT>
-        <DT>I/O and conversion:
-        <DD><TT>BN_bin2bn()</TT>,
-            <TT>BN_dec2bn()</TT>,
-            <TT>BN_bn2bin()</TT>,
-            <TT>BN_bn2dec()</TT>
-        </DL>
-        <P>
-        <DL COMPACT>
-        <DT>Setting and clearing:
-        <DD><TT>BN_zero()</TT>,
-            <TT>BN_one()</TT>,
-            <TT>BN_set_bit()</TT>,
-            <TT>BN_clear_bit()</TT>
-        </DL>
-        <P>
-        <DL COMPACT>
-        <DT>Testing:
-        <DD><TT>BN_is_zero()</TT>,
-            <TT>BN_is_one()</TT>,
-            <TT>BN_is_bit_set()</TT>,
-            <TT>BN_cmp()</TT>
-        </DL>
-        <P>
-        <DL COMPACT>
-        <DT>Arithematic operations:
-        <DD><TT>BN_add()</TT>,
-            <TT>BN_sub()</TT>,
-            <TT>BN_mul()</TT>,
-            <TT>BN_div()</TT>,
-            <TT>BN_sqr()</TT>,
-            <TT>BN_exp()</TT>,
-            <TT>BN_gcd()</TT>
-        </DL>
-        <P>
-        <DL COMPACT>
-        <DT>Modular arithematic operations:
-        <DD><TT>BN_mod_add()</TT>,
-            <TT>BN_mod_mul()</TT>,
-            <TT>BN_mod_sqr()</TT>,
-            <TT>BN_mod_exp()</TT>
-        </DL>
-    </BLOCKQUOTE>
-    <P>
-    The above list is not meant to be exhaustive for this
-    assignment.  You may need to use more functions from
-    the BIGNUM library.
-    <P>
-    Below are a couple of samples of how to use BIGNUM.
-    <P>
-    To create a BIGNUM and initialize to zero, you can do:
-    <PRE>
-    BIGNUM *bn_n=NULL;
-
-    bn_n = BN_new();
-    if (bn_n == NULL) { /* print error and exit */ }
-    BN_zero(bn_n);
-
-    ... /* do something */
-
-    BN_free(bn_n);</PRE>
-
-    If you have a 32-bit integer stored in a variable named "word"
-    and you want to square it and print the result, you can do the following:
-    <PRE>
-    void SquareIt(uint32_t word)
-    {
-        BIGNUM *bn_a=NULL;
-
-        bn_a = BN_new();
-        if (bn_a == NULL) { /* print error and exit */ }
-        BN_zero(bn_a);
-
-        /* need the next line for portability to Intel platform */
-        word = htonl(word);
-
-        /* convert word to BIGNUM */
-        if (BN_bin2bn((unsigned char *)(&word), sizeof(uint32_t), bn_a) !=
-                NULL)
-        {
-            BIGNUM *bn_a_squared=NULL;
-            BN_CTX *bn_ctx=NULL;
-
-            bn_a_squared = BN_new();
-            if (bn_a_squared == NULL) { /* print error and exit */ }
-            BN_zero(bn_a_squared);
-
-            bn_ctx = BN_CTX_new();
-            if (bn_ctx == NULL) { /* print error and exit */ }
-            BN_CTX_init(bn_ctx);
-
-            if (BN_sqr(bn_a_squared, bn_a, bn_ctx)) {
-                printf("The square of %u is %s.\n",
-                        (unsigned int)word,
-                        BN_bn2dec(bn_a_squared));
-            }
-            BN_CTX_free(bn_ctx);
-            BN_free(bn_a_squared);
-        }
-        BN_free(bn_a);
-    }</PRE>
-</UL>
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A NAME="submit"><B>Submission</B></A></FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
-All assignments are to be submitted electronically - including
-your README file. To submit your work, you must first
-<TT>tar</TT> all the files you want to submit into a <B>tarball</B> and
-<TT>gzip</TT> it to create a <B>gzipped tarfile</B> named
-<TT><B>hw7.tar.gz</B></TT>.  Then you upload
-<TT><B>hw7.tar.gz</B></TT> to the
-<A HREF="../../bsubmit.html">Bistro</A> system.
-On <TT>nunki.usc.edu</TT> or <TT>aludra.usc.edu</TT>,
-the command you can use to create a gzipped tarfile is:
-
-    <PRE>
-    /usr/usc/bin/gtar cvzf hw7.tar.gz MYFILES</PRE>
-
-Where <B><TT>MYFILES</TT></B> is the list of file names that you are submitting
-(you can also use wildcard characters if you are sure that it will pick up only
-the right files).
-<B>DO NOT</B> submit your compiled code, just your source code and
-README file.  <B>Two point will be deducted</B> if you submit extra
-binary files, such as <TT>hw7</TT>, <TT>.o</TT>,
-<TT>core</TT>, or files that can be <B>generated</B> from the rest of your submission.
-
-<P>
-Please note that the 2nd commandline argument of the <TT>gtar</TT> command above
-is the <B>output</B> filename of the <TT>gtar</TT> command.  So, if you omit
-<TT>hw7.tar.gz</TT> above, you may accidentally replace one of your files with
-the output of the <TT>gtar</TT> command.  So, please make sure that the
-first commandline argument is <TT><B>cvzf</B></TT> and the 2nd commandline argument
-is <TT><B>hw7.tar.gz</B></TT>.
-
-<P>
-In your README file, you should include the command that the grader
-should use to compile your code to generate <B><TT>hw7</TT></B>.
-If you don't include such instruction, the grader will assume that the command
-specified in the spec should be used to compile your code.
-But if they can't get your code to compile easily and you don't submit
-compilation instructions, you will lose points.  Please also note that
-you MUST include a README file in your submission.  If you have nothing
-to put inside the README file, please write "(This file intentionally left blank.)"
-in your README file.
-
-<P>
-Here are a couple of sample commands for creating your <TT>hw7.tar.gz</TT> file
-(your command will vary depending on what files you want to submit):
-    <PRE>
-    /usr/usc/bin/gtar cvzf hw7.tar.gz *.c *.h Makefile README
-    /usr/usc/bin/gtar cvzf hw7.tar.gz *.cpp *.h Makefile README.txt</PRE>
-
-You should read the output of the above commands carefully to make sure
-that <TT>hw7.tar.gz</TT> is created properly.
-If you don't understand the output of the above commands, you need to learn
-how to read it!  It's your responsibility to ensure that
-<TT>hw7.tar.gz</TT> is created properly.
-
-<P>
-You need to run <A HREF="../../bsubmit.html"><B><TT>bsubmit</TT></B></A> to
-submit hw7.tar.gz to the submission server.
-Please use the following command:
-    <PRE><B>
-    ~csci551b/bin/bsubmit upload \
-        -email `whoami`@usc.edu \
-        -event merlot.usc.edu_80_1372906710_67 \
-        -file hw7.tar.gz</B></PRE>
-
-Please note that the quotation marks surrounding <TT>whoami</TT> are
-<B>back-quote</B> characters and not single quotes.  It's best if
-you just copy and paste the above command into your console and not
-try to type the whole command in.
-
-<P>
-
-If the command is executed successfully, the output should look like the
-<A HREF="../../bsubmit.html#normal">sample mentioned in the submission web page</A>.
-If it doesn't look like that, please fix your command and rerun it until it looks
-right.  If there are problems, please contact the instructor.
-
-<P>
-It is extreme important that you also <A HREF="../../submit.html#verify"><B>verify your submission</B></A>
-after you have submitted <TT>hw7.tar.gz</TT> electronically to make
-sure that everything you have submitted is everything you wanted us to grade.
-
-<P>
-Finally, please be familiar with the <A HREF="../../submit.html">Electronic Submission Guidelines</A>
-and information on the <A HREF="../../bsubmit.html">bsubmit web page</A>.
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        </TABLE>
-    </TD>
+</TD>
 </TR>
-</TABLE>
-
-<HR>
-[<I>Last updated Sun Mar 29 2015</I>] &nbsp;&nbsp;
-[<I>Please see <A
-HREF="../../copyright.html">copyright</A> regarding copying.</I>]
-
-<!-- @(#)$Id: index.html,v 1.2 2015/03/29 17:25:22 william Exp $ -->
+<TR><TD>&nbsp;</TD></TR>
+<!-- Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
+<FONT COLOR="#ffffff"><A
+NAME="grading"><B>Grading Guidelines</B></A>
+    </FONT>
+</TD>
+</TR>
+<!-- Top Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT>
 
 </BODY>
 </HTML>
