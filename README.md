@@ -25,10 +25,7 @@ see the <A HREF="http://merlot.usc.edu/cs531-s15/openssl.html">additional notes 
 <PRE>
     make hw7</PRE>
 an executable named <B>hw7</B> is created.
-</TD>
-</TR>
-<TR><TD>&nbsp;</TD></TR>
-<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
+
 <FONT COLOR="#ffffff"><A
 NAME="syntax"><B>Commandline Syntax & Program
 Output</B></A></FONT>
