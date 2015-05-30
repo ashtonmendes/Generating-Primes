@@ -7,19 +7,7 @@
 <BODY BGCOLOR="#FFFFFF" LINK="#D02090" VLINK="#996600" ALINK="#990000">
 
 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
-<TR><TD ALIGN=CENTER VALIGN=TOP WIDTH=112>
-</TD>
-<TD ALIGN=LEFT VALIGN=TOP>
-<TABLE BORDER=0>
-<TR><TD ALIGN=LEFT VALIGH=TOP>
-<A HREF="../../">Spring 2015<A>
-</TD>
-<TD ALIGN=RIGHT VALIGH=TOP>
-<A HREF="../../">CSCI 531</A><BR>
-</TD>
-</TR>
-<BR>
-<TR><TD COLSPAN=3 ALIGN=LEFT>
+
 The purpose of this assignment is to get familiar with
 generating prime numbers, the
 <A HREF="http://www.openssl.org/docs/crypto/bn.html">multiple
