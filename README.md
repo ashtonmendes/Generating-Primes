@@ -8,59 +8,52 @@
 
 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
 <TR><TD ALIGN=CENTER VALIGN=TOP WIDTH=112>
-    <!-- COL 1, should be identical to all other pages here -->
-    <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=113>
-    <TR><TD ALIGN=CENTER VALIGN=TOP WIDTH=112>
-        &nbsp;
-        </TD>
-    </TR>
-    <TR><TD ALIGN=CENTER VALIGN=TOP WIDTH=112>
-        <A HREF="http://www.cs.usc.edu/"><IMG SRC="../../images/usctommy.gif"
-            ALT="USC CSD Home" BORDER=0></A>
-        <!-- BR>&nbsp;<BR -->
-        <!-- IMG SRC="images/small-uc.gif" BORDER=0 -->
-        </TD>
-    </TR>
-    </TABLE>
-    </TD>
-    <!-- TD ALIGN=LEFT VALIGN=TOP WIDTH=13 -->
-    <!-- COL 2, should be identical to all other pages here -->
-        <!-- IMG SRC="images/spacer.gif" HEIGHT=1 WIDTH=13 -->
-    <!-- /TD -->
-    <TD ALIGN=LEFT VALIGN=TOP>
-    <!-- COL 3, every page should be different -->
-        <TABLE BORDER=0>
-        <!-- Page Header -->
-        <TR><TD ALIGN=LEFT VALIGH=TOP>
-                <A HREF="../../">Spring 2015<A>
-            </TD>
-            <TD ALIGN=RIGHT VALIGH=TOP>
-                <A HREF="../../">CSCI 531</A><BR>
-            </TD>
-        </TR>
-        <BR>
-        <!-- Page Title -->
-        <TR><TD COLSPAN=3 ALIGN=CENTER>
-                <H2>Homework #7</H2>
-                <H4>(100 points total)</H4>
-                <H2>Generating Primes</H2>
-                <B><I>Due 11:45PM
-                5/1/2015 (firm)</I></B>
-                <!--
-                <H3><FONT COLOR="red"><I>(Under Construction -
-                    Anything Can Change without Notice)</I></FONT></H3>
-                  -->
-            </TD>
-        </TR>
-        <TR><TD>&nbsp;</TD></TR>
-        <!-- Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
-                <FONT COLOR="#ffffff"><A
-                NAME="intro"><B>Assignment</B></A></FONT>
-            </TD>
-        </TR>
-        <!-- Top Section -->
-        <TR><TD COLSPAN=3 ALIGN=LEFT>
+<!-- COL 1, should be identical to all other pages here -->
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=113>
+<TR><TD ALIGN=CENTER VALIGN=TOP WIDTH=112>
+&nbsp;
+</TD>
+</TR>
+</TABLE>
+</TD>
+<!-- TD ALIGN=LEFT VALIGN=TOP WIDTH=13 -->
+<!-- COL 2, should be identical to all other pages here -->
+<!-- IMG SRC="images/spacer.gif" HEIGHT=1 WIDTH=13 -->
+<!-- /TD -->
+<TD ALIGN=LEFT VALIGN=TOP>
+<!-- COL 3, every page should be different -->
+<TABLE BORDER=0>
+<!-- Page Header -->
+<TR><TD ALIGN=LEFT VALIGH=TOP>
+<A HREF="../../">Spring 2015<A>
+</TD>
+<TD ALIGN=RIGHT VALIGH=TOP>
+<A HREF="../../">CSCI 531</A><BR>
+</TD>
+</TR>
+<BR>
+<!-- Page Title -->
+<TR><TD COLSPAN=3 ALIGN=CENTER>
+<H2>Homework #7</H2>
+<H4>(100 points total)</H4>
+<H2>Generating Primes</H2>
+<B><I>Due 11:45PM
+5/1/2015 (firm)</I></B>
+<!--
+<H3><FONT COLOR="red"><I>(Under Construction -
+    Anything Can Change without Notice)</I></FONT></H3>
+  -->
+</TD>
+</TR>
+<TR><TD>&nbsp;</TD></TR>
+<!-- Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT BGCOLOR="#000000" WIDTH=100%>
+<FONT COLOR="#ffffff"><A
+NAME="intro"><B>Assignment</B></A></FONT>
+</TD>
+</TR>
+<!-- Top Section -->
+<TR><TD COLSPAN=3 ALIGN=LEFT>
 The purpose of this assignment is to get you familiar with
 generating prime numbers, the
 <A HREF="http://www.openssl.org/docs/crypto/bn.html">multiple
